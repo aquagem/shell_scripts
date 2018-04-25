@@ -1,23 +1,6 @@
 #!/usr/bin/ksh
-#######################################################################################################
-#
-# NAME:        rename_bulkfiles.sh
-#
-# PARAMETERS:  None
-#
-# DESCRIPTION: This script will rename all the File extensions from .txt to .dat in a directory
-#
-# FUNCTIONS IN THIS FILE:
-#
-# MODIFICATION HISTORY
-# NAME                 DATE         DESCRIPTION
-# ===================  ==========   ===================================================================
-#
-#######################################################################################################
 
-#######################################################################################################
 ## Navigate to file location
-
 data_dir=/home/username/data/in
 #echo $data_dir
 
@@ -41,4 +24,3 @@ if [ $count != 0 ]; then
 		mv $file $(expr $file : '\(.*\)\.txt').dat
 	done
 fi
-#######################################################################################################
